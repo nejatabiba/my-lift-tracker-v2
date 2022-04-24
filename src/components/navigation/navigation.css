@@ -1,0 +1,13 @@
+.topNav a {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.topNav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    background-color: forestgreen;
+    height: 2.5vw;
+}
