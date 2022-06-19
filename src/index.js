@@ -6,6 +6,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Calendar from "./pages/Calendar";
+import Workouts from "./pages/Workouts";
+import Progress from "./pages/Progress";
 
 const root = createRoot(
     document.getElementById("root")
@@ -15,11 +17,11 @@ root.render(
   <React.StrictMode>
       <BrowserRouter>
           <Routes>
-              <Route path="workouts"></Route>
-              <Route path="calendar" element={Calendar}></Route>
-              <Route path="progress"></Route>
+              <Route path="/" element={<App />}></Route>
+              <Route path="workouts" element={<Workouts />}></Route>
+              <Route path="calendar" element={<Calendar />}></Route>
+              <Route path="progress" element={<Progress />}></Route>
           </Routes>
-          <App />
       </BrowserRouter>
   </React.StrictMode>
 );

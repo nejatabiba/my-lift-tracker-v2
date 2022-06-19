@@ -1,10 +1,12 @@
 import './App.css';
-import Calendar from "./pages/Calendar";
+import Layout from "./components/layout/layout";
 
 function App() {
   return (
     <div>
-      <Calendar />
+        <Layout>
+            <h2>Home</h2>
+        </Layout>
     </div>
   );
 }
